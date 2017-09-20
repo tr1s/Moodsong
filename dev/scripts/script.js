@@ -1,40 +1,40 @@
 var audio = {};
 
   audio.tempo1 = new Audio();
-  audio.tempo1.src = 'assets/audio/fx-navi.mp3';
+  audio.tempo1.src = './assets/audio/fx-navi.mp3';
 
   audio.tempo2 = new Audio();
-  audio.tempo2.src = 'assets/audio/fx-streetfighter.mp3';
+  audio.tempo2.src = './assets/audio/fx-streetfighter.mp3';
 
   audio.melody1 = new Audio();
-  audio.melody1.src = 'assets/audio/melody1.mp3';  
+  audio.melody1.src = './assets/audio/melody1.mp3';  
 
   audio.melody2 = new Audio();
-  audio.melody2.src = 'assets/audio/melody2.mp3';
+  audio.melody2.src = './assets/audio/melody2.mp3';
 
   audio.beat1 = new Audio();
-  audio.beat1.src = 'assets/audio/beat1.mp3';
+  audio.beat1.src = './assets/audio/beat1.mp3';
 
   audio.beat2 = new Audio();
-  audio.beat2.src = 'assets/audio/beat2.mp3';
+  audio.beat2.src = './assets/audio/beat2.mp3';
 
   audio.vocals1 = new Audio();
-  audio.vocals1.src = 'assets/audio/vocals1.mp3';
+  audio.vocals1.src = './assets/audio/vocals1.mp3';
 
   audio.vocals2 = new Audio();
-  audio.vocals2.src = 'assets/audio/vocals2.mp3';
+  audio.vocals2.src = './assets/audio/vocals2.mp3';
 
   audio.synth1 = new Audio();
-  audio.synth1.src = 'assets/audio/ambience1.mp3';
+  audio.synth1.src = './assets/audio/ambience1.mp3';
 
   audio.synth2 = new Audio();
-  audio.synth2.src = 'assets/audio/ambience2.mp3';
+  audio.synth2.src = './assets/audio/ambience2.mp3';
 
   audio.synth3 = new Audio();
-  audio.synth3.src = 'assets/audio/ambience3.mp3';
+  audio.synth3.src = './assets/audio/ambience3.mp3';
 
   audio.synth4 = new Audio();
-  audio.synth4.src = 'assets/audio/ambience4.mp3';
+  audio.synth4.src = './assets/audio/ambience4.mp3';
 
 var selections = [];
 var deselections = [];

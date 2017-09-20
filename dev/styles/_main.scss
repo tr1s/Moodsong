@@ -8,13 +8,13 @@
     }
     .info-top {
        h1 {
-           color: cyan;
+           color: #2febe0;
            margin: 2rem;
            font-size: 5rem;
            font-weight: 200;
            text-transform: uppercase;
            span {
-               color: hotpink;
+               color: #f341ba;
            }
        }
        p {
@@ -38,14 +38,14 @@
  }
  .info-top {
     h1 {
-        color: cyan;
+        color: #2febe0;
         margin-top: 10rem;
         margin-bottom: 2rem;
         font-size: 6rem;
         font-weight: 200;
         text-transform: uppercase;
         span {
-            color: hotpink;
+            color: #f341ba;
         }
     }
     p {
@@ -61,7 +61,7 @@
         padding: .5rem 1rem;
         border: 1px solid #0084b4;
         border-radius: 2px;
-        background: cyan;
+        background: #2febe0;
         margin-bottom: 1.6rem;
         a {
             color: black;
@@ -85,11 +85,11 @@
             margin-bottom: 1rem;
         }
         .cyan {
-            color: cyan;
+            color: #2febe0;
             display: inline-block;
         }
         .purple {
-            color: purple;
+            color: #f341ba;
             display: inline-block;
         }
     }
@@ -193,21 +193,21 @@
 
 // LEFT CELL [TEMPO, BEAT, MELODY, & VOCAL CONTAINER]
 .left-cell {
-    border: 1px solid rgba(96, 203, 62, .3);
+    border: 1px solid rgba(165,104,255,0.3);
     margin-bottom: 15px;
     @include respond-to("small"){
 		margin-bottom: 5px;
     }
 }
 .left-cell:nth-child(2) {
-	border: 1px solid #00a3ff;
+	border: 1px solid rgba(112,99,255,0.3);
 }
 .left-cell:nth-child(3) {
-	border: 1px solid #f50991;
+	border: 1px solid rgba(34,71,255,0.3);
 }
 .left-cell:last-child {
 	margin-bottom: 0;
-	border: 1px solid #fff100;
+	border: 1px solid rgba(47,235,224,0.3);
 }
 .left-cell__title {
     font-size: .9rem;
@@ -258,6 +258,7 @@
         margin-bottom: 1rem;
         text-transform: uppercase;
         font-weight: 200;
+        font-size: 0.8rem;
     }
     .form__checkbox-label {
         border-radius: 4px;
@@ -271,40 +272,40 @@
     }
     // SEPARATE COLOURS FOR EACH GROUP
     .tempo {
-        background:radial-gradient(circle, #60cb3e, #297d30);
+        background:radial-gradient(circle, #a568ff, #7047c1);
     }
     .beat {
-        background:radial-gradient(circle, #00a3ff, #2247ff);
+        background:radial-gradient(circle, #7063ff, #4015cb);
     }
     .melody {
-        background:radial-gradient(circle, #f50991, #9c248a);
+        background:radial-gradient(circle, #00fad8, #2247ff);
     }
     .vocals {
-        background:radial-gradient(circle, #fff100, #ffc528);
+        background:radial-gradient(circle, #2febe0, #18a3a5);
     }
     .synths {
-        background:radial-gradient(circle, #805bfa, #6e1bff);
+        background:radial-gradient(circle, #f341ba, #701a85);
     }
     .tempoShadow {
-        background: #185709;
+        background: #7047c1;
     }
     .beatShadow {
-        background: #152ecd;
+        background: #4015cb;
     }
     .melodyShadow {
-        background: #6c106b;
+        background: #2247ff;
     }
     .vocalsShadow {
-        background: #eab212;
+        background: #18a3a5;
     }
     .synthsShadow {
-        background: #5109be;
+        background: #701a85;
     }
 	// KEYFRAMES
 	@keyframes glowTempo {
-	  0% {background-color: #60cb3e; box-shadow: 0 0 3px #297d30; }
-	  50% {background-color: #60cb3e; box-shadow: 0 0 40px #297d30; }
-	  100% {background-color: #60cb3e; box-shadow: 0 0 3px #297d30; }
+	  0% {background-color: #a568ff; box-shadow: 0 0 3px #7047c1; }
+	  50% {background-color: #a568ff; box-shadow: 0 0 40px #7047c1; }
+	  100% {background-color: #a568ff; box-shadow: 0 0 3px #7047c1; }
 	}
 
 	.glowTempo {
@@ -312,9 +313,9 @@
 	}
 
 	@keyframes glowBeat {
-	  0% {background-color: #00a3ff; box-shadow: 0 0 3px #2247ff; }
-	  50% {background-color: #00a3ff; box-shadow: 0 0 40px #2247ff; }
-	  100% {background-color: #00a3ff; box-shadow: 0 0 3px #2247ff; }
+	  0% {background-color: #7063ff; box-shadow: 0 0 3px #4015cb; }
+	  50% {background-color: #7063ff; box-shadow: 0 0 40px #4015cb; }
+	  100% {background-color: #7063ff; box-shadow: 0 0 3px #4015cb; }
 	}
 
 	.glowBeat {
@@ -322,9 +323,9 @@
 	}
 
 	@keyframes glowMelody {
-	  0% {background-color: #f50991; box-shadow: 0 0 3px #9c248a; }
-	  50% {background-color: #f50991; box-shadow: 0 0 40px #9c248a; }
-	  100% {background-color: #f50991; box-shadow: 0 0 3px #9c248a; }
+	  0% {background-color: #00fad8; box-shadow: 0 0 3px #2247ff; }
+	  50% {background-color: #00fad8; box-shadow: 0 0 40px #2247ff; }
+	  100% {background-color: #00fad8; box-shadow: 0 0 3px #2247ff; }
 	}
 
 	.glowMelody {
@@ -332,9 +333,9 @@
 	}
 
 	@keyframes glowVocals {
-	  0% {background-color: #fff100; box-shadow: 0 0 3px #e2c040; }
-	  50% {background-color: #fff100; box-shadow: 0 0 40px #e2c040; }
-	  100% {background-color: #fff100; box-shadow: 0 0 3px #e2c040; }
+	  0% {background-color: #2febe0; box-shadow: 0 0 3px #18a3a5; }
+	  50% {background-color: #2febe0; box-shadow: 0 0 40px #18a3a5; }
+	  100% {background-color: #2febe0; box-shadow: 0 0 3px #18a3a5; }
 	}
 
 	.glowVocals {
@@ -342,9 +343,9 @@
 	}
 
 	@keyframes glowSynths {
-	  0% {background-color: #805bfa; box-shadow: 0 0 3px #6e1bff; }
-	  50% {background-color: #805bfa; box-shadow: 0 0 40px #6e1bff; }
-	  100% {background-color: #805bfa; box-shadow: 0 0 3px #6e1bff; }
+	  0% {background-color: #f341ba; box-shadow: 0 0 3px #701a85; }
+	  50% {background-color: #f341ba; box-shadow: 0 0 40px #701a85; }
+	  100% {background-color: #f341ba; box-shadow: 0 0 3px #701a85; }
 	}
 
 	.glowSynths {
@@ -399,7 +400,7 @@
 
 // RIGHT SIDE OF APP [SOME STYLES ARE BORROWED FROM (LEFT) CLASSES]
 .right {
-    border: 1px solid rgba(128, 91, 250, .3);
+    border: 1px solid rgba(243,65,186, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -453,11 +454,11 @@ footer {
                margin-top: .5rem;
            }
            .cyan {
-               color: cyan;
+               color: #2febe0;
                display: inline-block;
            }
            .purple {
-               color: purple;
+               color: #f341ba;
                display: inline-block;
            }
        }
