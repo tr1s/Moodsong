@@ -76,12 +76,13 @@
         font-weight: 200;
     }
     .info-bottom--enjoy {
-        margin-bottom: 8rem;
+        margin-bottom: 3.2rem;
     }
     .info-bottom--copyright {
         span {
             display: block;
-            margin-top: .5rem;
+            margin-top: .2rem;
+            margin-bottom: 1rem;
         }
         .cyan {
             color: cyan;
@@ -94,6 +95,7 @@
     }
     p:last-child {
         margin-bottom: 0;
+        font-size: 1.4rem;
     }
  }
 
@@ -213,9 +215,14 @@
     padding-top: 10px;
     padding-bottom: 10px;
     text-transform: uppercase;
+    opacity: 0.6;
     @include respond-to("small"){
 		font-size: .7rem;
     }
+}
+
+.left-cell__title h2 {
+    font-weight: 500;
 }
 // FORM CONTAINER
 .left-cell__form {
@@ -250,6 +257,7 @@
         margin: 1.4rem 0;
         margin-bottom: 1rem;
         text-transform: uppercase;
+        font-weight: 200;
     }
     .form__checkbox-label {
         border-radius: 4px;
@@ -415,24 +423,25 @@ footer {
         display: none;
     }
     .info-bottom {
+       margin-top: 2.2rem;
        margin-bottom: 17rem;
        text-align: center;
        button {
-           padding: .5rem 1rem;
+           padding: .3rem 1rem;
            border: 1px solid #0084b4;
            border-radius: 2px;
            background: cyan;
            margin-bottom: 1.6rem;
            a {
                color: black;
-               font-size: 1.6rem;
+               font-size: 1.4rem;
                font-weight: 300;
            }
        }
        p {
            color: white;
-           font-size: 2rem;
-           margin-bottom: 2rem;
+           font-size: 1.4rem;
+           margin-bottom: 1.2rem;
            font-weight: 200;
        }
        .info-bottom--enjoy {
