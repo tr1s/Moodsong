@@ -105,7 +105,7 @@ audio.events = function() {
 
    $.each(deselections, function(i, item) {
       audio[item].pause();
-      audio[item].crrentTime = 0;
+      audio[item].currentTime = 0;
     })
    }
 }; // END OF EVENTS
