@@ -1,0 +1,40 @@
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "small" {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "medium" {
+    @media (max-width: 769px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "large" {
+    @media (max-width: 969px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "wrapper" {
+    @media (max-width: 1080px) {
+      @content;
+    }
+  }
+
+    @else if $breakpoint == "desktop" {
+    @media (min-width: 1080px) {
+      @content;
+    }
+  }
+
+  @else {
+    @media ($breakpoint) {
+      @content;
+    }
+  }
+}
+
+// HOW TO CALL THE MIXIN
+// @include respond-to("small"){}

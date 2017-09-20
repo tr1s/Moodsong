@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Moodsong ♮</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="An interactive app that gives you a custom song depending on your mood and tastes.">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500" rel="stylesheet">
+	<link rel="stylesheet" href="public/styles/styles.css"/>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header-small">
+			<div class="info-top">
+				<h1>Mood<span>song<span></h1>
+				<p>Select one sample from each category, and enjoy your creation.</p>
+			</div>
+		</header>
+		<header class="header-big">
+			<div class="info-top">
+				<h1>Mood<span>song<span></h1>
+				<p>Select one sample from each category, and enjoy your creation.</p>
+			</div>
+			<div class="info-bottom">
+				<button><a href="http://twitter.com/share?text=Had%20some%20fun%20messing%20around%20on%20this%20web%20drum%20pad!" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a></button>
+				<p class="info-bottom--enjoy">Tweet if you enjoyed!</p>
+				<p class="info-bottom--copyright">Made with love by <span><span class="purple">Tristan</span> & <span class="cyan">Evelyn</span></span></p>
+				<p class="music">Music by Nightizm</p>
+			</div>
+		</header>
+
+		<section>
+			<div class="machine-container">
+				<!-- LEFT DRUM MACHINE CONTAINER -->
+				<main class="left">
+					<!-- LEFT CELL INPUT DIV -->
+					<div class="left-cell">
+						<div class="left-cell__title"><h2>Effects</h2></div>
+						<form action="#" class="left-cell__form">
+							<div class="form__checkbox-container">
+								<label for="choice1" class="form__checkbox-label unselected tempo glowTempo"></label>
+								<input data-audio="tempo1" type="checkbox" id="choice1" class="form__checkbox-input" name="choice1">
+								<div class="form__checkbox-shadow tempoShadow"></div>
+								<p>Navi</p>
+							</div>
+							<div class="form__checkbox-container">
+								<label for="choice2" class="form__checkbox-label unselected tempo glowTempo"></label>
+								<input data-audio="tempo2" type="checkbox" id="choice2" class="form__checkbox-input" name="choice1">
+								<div class="form__checkbox-shadow tempoShadow"></div>
+								<p>Fighter</p>
+							</div>
+						</form>
+					</div>
+
+					<!-- LEFT CELL INPUT DIV -->
+					<div class="left-cell">
+						<div class="left-cell__title"><h2>Beat</h2></div>
+						<form action="#" class="left-cell__form">
+							<div class="form__checkbox-container">
+								<label for="choice3" class="form__checkbox-label unselected beat glowBeat"></label>
+								<input data-audio="beat1" type="checkbox" id="choice3" class="form__checkbox-input" name="choice2">
+								<div class="form__checkbox-shadow beatShadow"></div>
+								<p>4 x 4</p>
+							</div>
+							<div class="form__checkbox-container">
+								<label for="choice4" class="form__checkbox-label unselected beat glowBeat"></label>
+								<input data-audio="beat2" type="checkbox" id="choice4" class="form__checkbox-input" name="choice2">
+								<div class="form__checkbox-shadow beatShadow"></div>
+								<p>Trap</p>
+							</div>
+						</form>
+					</div>
+
+					<!-- LEFT CELL INPUT DIV -->
+					<div class="left-cell">
+						<div class="left-cell__title"><h2>Chords / Melody</h2></div>
+						<form action="#" class="left-cell__form">
+							<div class="form__checkbox-container">
+								<label for="choice5" class="form__checkbox-label unselected melody glowMelody"></label>
+								<input data-audio="melody1" type="checkbox" id="choice5" class="form__checkbox-input" name="choice3">
+								<div class="form__checkbox-shadow melodyShadow"></div>
+								<p>Uplifting</p>
+							</div>
+							<div class="form__checkbox-container">
+								<label for="choice6" class="form__checkbox-label unselected melody glowMelody"></label>
+								<input data-audio="melody2" type="checkbox" id="choice6" class="form__checkbox-input" name="choice3">
+								<div class="form__checkbox-shadow melodyShadow"></div>
+								<p>Mellow</p>
+							</div>
+						</form>
+					</div>
+
+					<!-- LEFT CELL INPUT DIV -->
+					<div class="left-cell">
+						<div class="left-cell__title"><h2>Vocals</h2></div>
+						<form action="#" class="left-cell__form">
+							<div class="form__checkbox-container">
+								<label for="choice7" class="form__checkbox-label unselected vocals glowVocals"></label>
+								<input data-audio="vocals1" type="checkbox" id="choice7" class="form__checkbox-input" name="choice4">
+								<div class="form__checkbox-shadow vocalsShadow"></div>
+								<p>Arabic</p>
+							</div>
+							<div class="form__checkbox-container">
+								<label for="choice8" class="form__checkbox-label unselected vocals glowVocals"></label>
+								<input data-audio="vocals2" type="checkbox" id="choice8" class="form__checkbox-input" name="choice4">
+								<div class="form__checkbox-shadow vocalsShadow"></div>
+								<p>Gregorian</p>
+							</div>
+						</form>
+					</div>
+				</main>
+
+				<!-- RIGHT DRUM MACHINE CONTAINER -->
+				<aside class="right">
+
+					<div class="right-cell">
+						<div class="left-cell__title"><h2>Ambiance</h2></div>
+						<form action="#" class="right-cell__form">
+							<div class="form__checkbox-container">
+								<label for="choice9" class="form__checkbox-label unselected synths glowSynths"></label>
+								<input data-audio="synth1" type="checkbox" id="choice9" class="form__checkbox-input" name="choice">
+								<div class="form__checkbox-shadow synthsShadow"></div>
+								<p>Fire</p>
+							</div>
+						</form>
+					</div>
+
+					<div class="right-cell">
+						<form action="#" class="right-cell__form">
+							<div class="form__checkbox-container">
+								<label for="choice10" class="form__checkbox-label unselected synths glowSynths"></label>
+								<input data-audio="synth2" type="checkbox" id="choice10" class="form__checkbox-input" name="choice">
+								<div class="form__checkbox-shadow synthsShadow"></div>
+								<p>Waves</p>
+							</div>
+						</form>
+					</div>
+
+					<div class="right-cell">
+						<form action="#" class="right-cell__form">
+							<div class="form__checkbox-container">
+								<label for="choice11" class="form__checkbox-label unselected synths glowSynths"></label>
+								<input data-audio="synth3" type="checkbox" id="choice11" class="form__checkbox-input" name="choice">
+								<div class="form__checkbox-shadow synthsShadow"></div>
+								<p>Playing</p>
+							</div>
+						</form>
+					</div>
+
+					<div class="right-cell">
+						<form action="#" class="right-cell__form">
+							<div class="form__checkbox-container">
+								<label for="choice12" class="form__checkbox-label unselected synths glowSynths"></label>
+								<input data-audio="synth4" type="checkbox" id="choice12" class="form__checkbox-input" name="choice">
+								<div class="form__checkbox-shadow synthsShadow"></div>
+								<p>Vinyl</p>
+							</div>
+						</form>
+					</div>
+				</aside>
+			</div> <!-- END OF DRUM MACHINE CONTAINER -->
+		</section>
+
+		<footer>
+			<div class="info-bottom">
+				<button><a href="http://twitter.com/share?text=Had%20some%20fun%20messing%20around%20on%20this%20web%20drum%20pad!" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a></button>
+				<p class="info-bottom--enjoy">Tweet if you enjoyed!</p>
+				<p class="info-bottom--copyright">Made with love by <span><span class="purple">Tristan</span> & <span class="cyan">Evelyn</span></span></p>
+				<p class="music">Music by Nightizm</p>
+			</div>
+		</footer>
+	</div> <!-- END OF THE WRAPPER -->
+
+<!-- THE JAVASCRIPT LIBRARY SOURCES -->
+	<script src="https://use.fontawesome.com/e6adbedc6e.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="public/scripts/script.js"></script>
+</body>
+</html>
+
+
+<!-- 
+
+<div class="social">
+	<div class="tweet">
+	 <a href="http://twitter.com/share?text=Had%20some%20fun%20messing%20around%20on%20this%20web%20drum%20pad!" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet if you enjoyed!</a>
+			</div> 
+	
+			<footer>
+				<p>Made w/ <i class="fa fa-heartbeat" aria-hidden="true"></i> by <a href="https://twitter.com/triscodes" target="_blank">Tristan Michael Lawrence</a> & <a href="https://twitter.com/evsDevs" target="_blank">Evelyn Cheung</a></p>
+			</footer>
+			<footer class="nightizm">
+				<p>Music by <a href="https://soundcloud.com/nightizm" target="_blank">Nightizm</a></p>
+			</footer>
+</div> -->
