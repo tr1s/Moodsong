@@ -7,7 +7,7 @@ var audio = {};
   audio.tempo2.src = './assets/audio/fx-streetfighter.mp3';
 
   audio.melody1 = new Audio();
-  audio.melody1.src = './assets/audio/melody1.mp3';  
+  audio.melody1.src = './assets/audio/melody1.mp3';
 
   audio.melody2 = new Audio();
   audio.melody2.src = './assets/audio/melody2.mp3';
@@ -42,8 +42,8 @@ var deselections = [];
 audio.events = function() {
 
   // This snipper will allow grouping like radio buttons, it will
-  // allow unselecting, and the selector will match all input 
-  // controls of type :checkbox and attach a click event handler 
+  // allow unselecting, and the selector will match all input
+  // controls of type :checkbox and attach a click event handler
   $("input:checkbox").on('click', function() {
 
     // in the handler, 'this' refers to the box clicked on
@@ -59,7 +59,7 @@ audio.events = function() {
       $(group).prop("checked", false);
       $(this).prev().removeClass('unselected');
       $box.prop("checked", true);
-   
+
     } else {
       $box.prop("checked", false);
     }
@@ -83,13 +83,13 @@ audio.events = function() {
 
       if (selections.length === 5) {
         $.each(deselections, function(i, item) {
-         audio[item].pause();
-         audio[item].currentTime = 0;
-         })
-        $.each(selections, function(i, item) { 
-         audio[item].currentTime = 0;
-         audio[item].play();
-         audio[item].loop = true;
+          audio[item].pause();
+          audio[item].currentTime = 0;
+        })
+        $.each(selections, function(i, item) {
+          audio[item].currentTime = 0;
+          audio[item].play();
+          audio[item].loop = true;
         })
       } else {
         stopAudio();
@@ -98,16 +98,16 @@ audio.events = function() {
 
   function stopAudio() {
 
-    $.each(selections, function(i, item) { 
+    $.each(selections, function(i, item) {
       audio[item].pause();
       audio[item].currentTime = 0;
     });
 
-   $.each(deselections, function(i, item) {
+  $.each(deselections, function(i, item) {
       audio[item].pause();
       audio[item].currentTime = 0;
     })
-   }
+  }
 }; // END OF EVENTS
 
 // initializing main app
